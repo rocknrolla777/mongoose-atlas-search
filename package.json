@@ -1,0 +1,26 @@
+{
+  "name": "mongoose-atlas-search",
+  "version": "1.0.3",
+  "description": "A customisable mongoose plugin to use MongoDB Atlas Search feature",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json --declaration"
+  },
+  "author": "Sergey Reus",
+  "license": "ISC",
+  "engines" : {
+    "node" : ">=8.0.0"
+  },
+  "keywords": [
+    "mongoose-plugin",
+    "mongoose",
+    "mongodb",
+    "atlas",
+    "mongodb atlas",
+    "atlas search",
+    "atlas plugin",
+    "search plugin"
+  ]
+}
