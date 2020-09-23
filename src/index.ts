@@ -26,14 +26,14 @@ const atlasSearchPlugin = {
 
 
             if (overwriteFind) {
-                model.find = function (query, projection, queryOptions = {}) {
+                model.find = function (query = {}, projection, queryOptions = {}) {
                     if (query[searchKey]) {
                         const aggregationQuery = buildAggregationQuery(query, projection, queryOptions, pluginOptions);
                         return aggregation(aggregationQuery);
                     } else return find(query, projection, queryOptions);
                 }
             } else {
-                model.search = function (query, projection, queryOptions = {}) {
+                model.search = function (query = {}, projection, queryOptions = {}) {
                     if (!query[searchKey]) throw new Error(`${searchKey} query param is required!`);
                     const aggregationQuery = buildAggregationQuery(query, projection, queryOptions, pluginOptions);
                     return aggregation(aggregationQuery);

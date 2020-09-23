@@ -19,7 +19,7 @@ export const validateOptions = options => {
         model: options.model,
         searchFunction: options.searchFunction || defaultSearchFunction,
         searchKey: options.searchKey || 'search',
-        overwriteFind: options.overwriteFind || true,
+        overwriteFind: !!options.overwriteFind,
         addFields: options.addFields
     }
 }
