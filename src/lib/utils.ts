@@ -55,7 +55,7 @@ export const buildAggregationQuery = (query, projection, queryOptions, options) 
     if (Object.keys(addFieldsStep).length) aggregationQuery.push(addFieldsStep);
 
     if (queryOptions.sort) {
-        aggregationQuery.push({$sort: {score: -1, ...queryOptions.sort}});
+        aggregationQuery.push({$sort: {...queryOptions.sort, score: -1}});
     }
 
     if (queryOptions.skip) {
