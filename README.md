@@ -12,7 +12,7 @@ Flexible mongoose plugin that converts simple find function to aggregation with 
 
 Atlas Search is available on all cluster tiers running MongoDB version 4.2 or later. Non-Atlas MongoDB deployments can not use it!
 
-**Important! Indexes can be created [manually](https://docs.atlas.mongodb.com/reference/atlas-search/create-index/), or progrmatiically using the [Atlas API](https://www.mongodb.com/docs/atlas/reference/api/atlas-search/#std-label-atlas-search-api-ref) or [Terraform](https://registry.terraform.io/providers/mongodb/mongodbatlas/latest/docs/resources/search_index) **
+**Important! Indexes can be created [manually](https://docs.atlas.mongodb.com/reference/atlas-search/create-index/), or programmatically using the [Atlas API](https://www.mongodb.com/docs/atlas/reference/api/atlas-search/#std-label-atlas-search-api-ref) or [Terraform](https://registry.terraform.io/providers/mongodb/mongodbatlas/latest/docs/resources/search_index) **
 ## Installation
 
 
